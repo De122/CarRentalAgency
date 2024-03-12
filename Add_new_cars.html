@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body{
+    background-color: pink;
+}
+* {
+  box-sizing: border-box;}
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+  padding: 10px;
+  height: 500px; /* Should be removed. Only for demonstration */}
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;}
+  .column{
+    background-color: aqua;
+    border:5px black solid;
+  }
+  p{
+    color: white;
+    font-weight: 300; }
+</style>
+</head>
+<body>
+<h2>Add New Cars</h2>
+<div class="row">
+  <div class="column">
+    <h2>Vehicle Model</h2>
+    <p><strong>Chooese your Model</strong> </p>
+    <label for="carM">Choose a car</label>
+    <select name="carM" id="carM">
+    <option value="select">select</option>
+    <option value="volvo">Volvo</option>
+    <option value="saab">Saab</option>
+    <option value="mercedes">Mercedes</option>
+    <option value="audi">Audi</option>
+    <option value="sudan">Sudan</option>
+    <option value="coupe">Coupe</option>
+    </select>
+  </div>
+  <div class="column">
+    <h2>Vehicle Number</h2>
+    <p><strong>Chooese Vehicle Number</strong> </p>
+    <label for="carN">Choose a car:</label>
+    <select name="carN" id="carN">
+    <option value="select">select</section></option>
+    <option value="volvo">Volvo</option>
+    <option value="saab">Saab</option>
+    <option value="mercedes">Mercedes</option>
+    <option value="audi">Audi</option>
+    <option value="sudan">Sudan</option>
+    <option value="coupe">Coupe</option>
+    </select>
+  </div>
+  <div class="column">
+    <h2>Seating Capacity</h2>
+    <p><strong>Seating Capacity</strong> </p>
+    <label for="SA">Choose a car:</label>
+    <select name="SA" id="SA">
+    <option value="select">select</option>
+    <option value="4">4</option>
+    <option value="6">6</option>
+    <option value="7">7</option>
+    <option value="8">8</option>
+    </select>
+  </div>
+  <div class="column">
+    <h2>Rent per Day</h2>
+    <p><strong>Chooese Rent per day</strong></p>
+    <label for="RT">Choose a car:</label>
+    <select name="RT" id="RT">
+    <option value="select">select</option>
+    <option value="2000">1 day - 1000 </option>
+    <option value="3000">2 day - 3000</option>
+    <option value="4000">3 day - 4000</option>
+    <option value="5000">4 day - 5000</option>
+    </select>
+  </div>
+</div>
+</body>
+</html>
